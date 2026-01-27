@@ -1,0 +1,51 @@
+.about-me-main {
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 29rem;
+}
+
+.with-image {
+    display: flex;
+    align-items: top;
+    color: #fff;
+    margin: 2rem 0rem;
+}
+
+.about-text {
+    padding: 1.5rem 2.6rem;
+}
+.me {
+    padding: 0;
+    margin: 0;
+    margin: 2rem 0rem;
+    width: 7rem;
+    color: rgb(250, 23, 61);
+    font-size: 1.5rem;
+}
+
+.text {
+    width: 32rem;
+}
+
+.fmore {
+    color: #fff;
+    background: transparent;
+    width: 8rem;
+    font-size: 1rem;
+    border: 0.15rem rgb(250, 23, 61) solid;
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin: 1.9rem 0rem;
+}
+
+.image-direction {
+    width: 30rem;
+    height: 24rem;
+    border-radius: 15% 40% 85% 15%;
+    margin-left: 8rem;
+    margin-top: 0.5rem;
+    box-shadow: 0.2rem 0.5rem 1rem black;
+}

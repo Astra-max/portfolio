@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.contact-main {
+  width: 100%;
+  height: 87vh;
+  background-color: rgb(12, 11, 11);
+  color: #fff;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-top: 3rem;
+  gap: 0.6rem;
+}
+
+.contact-message {
+  color: var(--main-color);
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.contact-data {
+  background-color: black;
+  height: 76%;
+  width: 30rem;
+  line-height: 2.4rem;
+  padding: 1rem 1.6rem;
+  border-radius: 0.4rem;
+}
+
+.links {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.leave-message {
+  background-color: var(--main-color);
+  border: 0rem;
+  border-radius: 0.4rem;
+  height: 2.8rem;
+  color: #fff;
+  cursor: pointer;
+  width: 80.6%;
+}
+
+.leave-message:hover {
+  box-shadow: 0.3rem 0.5rem 2rem #fc7676;
+}
+
+.user-name {
+  width: 30rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.email-i {
+  background-color: rgb(37, 37, 37);
+  border: 0rem;
+  height: 3.4rem;
+  color: #fc7676;
+  width: 98%;
+  border-radius: 0.4rem;
+  padding-left: 0.6rem;
+}
+
+.contact-submit {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  gap: 0.6rem;
+}
+
+.inputs {
+  height: 3.4rem;
+  color: #fc7676;
+  border: 0rem;
+  width: 100%;
+  border-radius: 0.4rem;
+  padding-left: 0.6rem;
+  background-color: rgb(37, 37, 37);
+}
+
+.text {
+  width: inherit;
+}
+
+.text-area {
+  width: 88%;
+  height: 12rem;
+  padding: 1rem;
+  color: #fc7676;
+  border-radius: 0.4rem;
+  background-color: rgb(37, 37, 37);
+  border: 0rem;
+}
+
+.b-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+}
+
+.notify-cont {
+  position: fixed;
+  top: 26%;
+  left: 20%;
+  width: 38rem;
+  padding: 1rem;
+  max-height: 50vh;
+  min-height: 60vh;
+  background-color: rgb(17, 16, 16);
+  border-radius: 0.4rem;
+  z-index: 1000;
+  overflow-y: scroll;
+}
+
+.remove-psk {
+  padding: 0.4rem 0.4rem;
+  border: 0rem;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.user-div {
+  width: 90%;
+  padding: 1rem 0.6rem;
+  border-radius: 0.4rem;
+  background-color: rgb(34, 33, 33);
+  border-left: 0.15rem solid var(--main-color);
+}
+
+.user {
+  color: rgb(240, 56, 86);
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.user-message {
+  opacity: 0.9;
+}
+
+.user-email {
+  padding-bottom: 0.6rem;
+}
+
+.notify-cont::-webkit-scrollbar {
+  background-color: rgb(27, 27, 27);
+  border-radius: 0rem 0.4rem 0.4rem 0rem;
+}

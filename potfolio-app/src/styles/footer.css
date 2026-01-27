@@ -1,0 +1,73 @@
+.main-contain {
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 18rem;
+    bottom: 0;
+    color: #fff;
+    gap: 4.5rem;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services p {
+    padding-top: 0.4rem;
+}
+
+.service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2.7rem;
+    padding-bottom: 1rem;
+}
+
+.local-address {
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+}
+
+.address-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.7rem;
+}
+.contacts-me {
+    font-size: 1.1rem;
+    padding-top: 4rem;
+    padding-bottom: 0.4rem;
+    color: rgb(250, 23, 61);
+}
+
+.contacts p {
+    padding-top: 0.4rem;
+}
+
+.address p {
+    padding-top: 0.4rem;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.copywrite {
+    background-color: black;
+    color: rgb(250, 23, 61);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}

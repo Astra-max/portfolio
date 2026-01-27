@@ -1,0 +1,133 @@
+.main-container {
+    background-color: rgb(5, 4, 4);
+}
+
+.clients-testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(250, 23, 61);
+    font-size: 1.6rem;
+    padding: 2rem 0rem;
+}
+.container-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.7rem 0rem;
+    gap: 1rem;
+}
+
+.testimonial-photos {
+    height: 25rem;
+    width: 19rem;
+    padding-top: 2rem;
+    border-top-right-radius: 4rem;
+    filter: contrast(4rem);
+}
+
+.testimonial-cards {
+    height: 29rem;
+    width: 55rem;
+    display: flex;
+    padding-left: 1.5rem;
+    align-items: top;
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+    border-top:  0.2rem rgb(247, 69, 98) solid;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.client-details {
+    padding-bottom: 0.6rem; 
+}
+
+.name {
+    padding-bottom: 0.25rem;
+    color:  rgb(250, 23, 61);
+    font-size: 1.35rem;
+}
+
+.relationship {
+    font-size: 1.1rem;
+}
+
+.email {
+    font-size: 1.1rem;
+    padding: 0;
+}
+
+.client-text {
+    width: 28rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.btn {
+    bottom: 0rem;
+    margin: 15.5rem 0rem;
+}
+.enquire {
+    color: #fff;
+    height: 2.6rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    background-color: rgb(250, 23, 61);
+    border: none;
+    font-size: 1rem;
+}
+
+.enquire:hover {
+    box-shadow: 0.3rem 0.5rem 2rem #fc7676;
+}
+
+.text-social-media {
+    padding: 2rem 2rem;
+}
+
+.testimonial-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    gap: 0.4rem;
+    padding: 2rem 0.2rem;
+    position: absolute;
+}
+
+.facebook {
+    padding: 0.3rem;
+    width: 2rem;
+    color: white;
+    border-radius: 0.5rem;
+    background-color: rgb(37, 36, 36);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    color: #fff;
+    background-color: rgb(250, 8, 48);
+    margin-left: 4rem;
+    padding-left: 9rem;
+    padding-top: 2rem;
+    width: 23rem;
+    height: 27rem;
+    filter: contrast(45rem);
+    border-radius: 0rem 0rem 0rem 19rem;
+    gap: 1rem;
+}
+
+.dot-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    padding-bottom: 2rem;
+}

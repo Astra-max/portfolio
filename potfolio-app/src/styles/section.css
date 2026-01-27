@@ -1,0 +1,138 @@
+.about-me-container {
+    display: flex;
+    padding: 3rem 4rem;
+    background-color: black;
+    color: #fff;
+    height: 27rem;
+}
+
+.bio {
+    width: 39rem;
+    padding-top: 1.4rem;
+    font-size: 1rem;
+}
+
+.profile-display {
+    display: flex;
+    align-items: top;
+    justify-content: top;
+    gap: 11rem;
+    margin-top: 1.5rem;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    box-shadow: 1rem 1rem 1rem rgb(245, 9, 49);
+}
+
+.profile-pic {
+    height: 23rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1.7rem;
+}
+
+.icon-facebook {
+    border: 0.1rem rgb(250, 23, 61) solid;
+    height: 2.3rem;
+    width: 2.3rem;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-twitter {
+    background: transparent;
+    border: 0.1rem rgb(250, 23, 61) solid;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-instagram {
+    background: transparent;
+    border: 0.1rem rgb(250, 23, 61) solid;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-github {
+    background: transparent;
+    border: 0.1rem rgb(250, 23, 61) solid;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-facebook {
+    box-shadow: 0.2rem 0.2rem 0.7rem rgb(250, 23, 61);
+    border-radius: 50%;
+}
+
+.social-twitter {
+    border-radius: 50%;
+    box-shadow: 0.2rem 0.2rem 0.7rem rgb(250, 23, 61);
+}
+
+.social-instagram {
+    border-radius: 50%;
+    background: rgb(39, 39, 39);
+    box-shadow: 0.2rem 0.2rem 0.7rem rgb(250, 23, 61);
+}
+
+.social-github {
+    border-radius: 50%;
+    box-shadow: 0.2rem 0.2rem 0.7rem rgb(250, 23, 61);
+}
+
+.impression {
+    color: rgb(250, 23, 61);
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.impression-me {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.documents {
+    display: flex;
+    align-self: center;
+    justify-content: start;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cv {
+    height: 2.5rem;
+    width: 10rem;
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: var(--main-color);
+    border-radius: 0.5rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.cv:hover {
+    filter: drop-shadow(0 0 1em rgb(73, 71, 67));
+}

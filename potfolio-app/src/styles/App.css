@@ -1,0 +1,148 @@
+:root {
+  --main-color: rgb(250, 23, 61);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0rem;
+  background-color: black;
+  width: 100%;
+  color: #fff;
+  gap: 5.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+}
+
+.logo-name {
+  color: var(--main-color);
+}
+
+.go {
+  color: #fff;
+}
+
+.icon-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    background-color: rgb(245, 9, 49);
+    color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    height: 1.3rem;
+    width: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.nav-elem {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.active {
+  color: var(--main-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-elem:hover {
+  border-bottom: 0.15rem  var(--main-color) solid;
+  cursor: pointer;
+}
+
+.hire-btn {
+  background-color:  var(--main-color);
+  border-radius: 0.5rem;
+  width: 7rem;
+  font-size: 1rem;
+  height: 2.4rem;
+  cursor: pointer;
+  border: 0cap;
+  color: #fff;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.persuade-client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color);
+}
+
+.auth-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 30%;
+  right: 30%;
+  height: 16rem;
+  width: 29rem;
+  background-color: rgb(15, 14, 14);
+  border-radius: 0.4rem;
+  z-index: 1000;
+}
+
+.pass-key {
+  width: 20rem;
+  height: 3.5rem;
+  padding-left: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(37, 37, 37);
+  border: 0rem;
+}
+
+.display-auth {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.i-message {
+  color: var(--main-color);
+  padding-bottom: 1rem;
+}
+
+.btn-pass {
+  height: 2.5rem;
+  border: 0rem;
+  border-radius: 0.4rem;
+  background-color: var(--main-color);
+  color: #fff;
+  cursor: pointer;
+}
