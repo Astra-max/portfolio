@@ -1,23 +1,30 @@
 .about-me-container {
+    width: 100%;
     display: flex;
-    padding: 3rem 4rem;
+    align-items: center;
     background-color: black;
     color: #fff;
-    height: 27rem;
+    height: 80vh;
 }
 
 .bio {
-    width: 39rem;
+    width: 70%;
     padding-top: 1.4rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .profile-display {
     display: flex;
-    align-items: top;
-    justify-content: top;
-    gap: 11rem;
-    margin-top: 1.5rem;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 4rem 9rem;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .profile-photo {

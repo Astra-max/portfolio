@@ -20,7 +20,7 @@ export default function MyServices() {
 
 export function Skills({ skill }) {
   var progressBar = {
-    width: "19rem",
+    width: "27rem",
     height: "0.4rem",
     backgroundColor: "#c73030",
     borderRadius: "0.4rem",

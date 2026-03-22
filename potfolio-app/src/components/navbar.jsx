@@ -42,7 +42,7 @@ export default function Navbar() {
       <div className="App">
         <div className="logo">
           <h1 className="logo-name">
-            Ast<span className="go">ra</span>
+            Max<span className="go">wel</span>
           </h1>
           <ul className="display">{element}</ul>
         </div>
