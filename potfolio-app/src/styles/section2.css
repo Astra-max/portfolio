@@ -59,3 +59,43 @@
     margin-top: 0.5rem;
     box-shadow: 0.2rem 0.5rem 1rem black;
 }
+
+@media (max-width: 768px) {
+  .about-me-main {
+    height: auto;
+    padding: 4rem 1.5rem;
+  }
+  
+  .with-image {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .image-direction {
+    width: 80%;
+    max-width: 20rem;
+    height: auto;
+    margin-left: 0;
+  }
+  
+  .about-text {
+    padding: 0;
+  }
+  
+  .me {
+    margin: 1rem auto;
+  }
+  
+  .text {
+    width: 100%;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+  
+  .fmore {
+    margin: 1.5rem auto;
+  }
+}

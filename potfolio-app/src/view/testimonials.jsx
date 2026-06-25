@@ -1,107 +1,118 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../../src/styles//testimonials.css";
 import {
   faFacebook,
   faLinkedinIn,
   faTwitter,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faDotCircle,
-  faHeart,
-  faPhone,
-  faThumbsUp,
-} from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faThumbsUp, faHeart } from "@fortawesome/free-solid-svg-icons";
+import "../../src/styles/testimonials.css";
+
+const testimonials = [
+  {
+    id: 1,
+    name: "Mercy Daniels",
+    role: "Client · Astradev Tech",
+    email: "mercydaniels2@gmail.com",
+    photo: "blackwoman.jpg",
+    text: `I'm quite grateful to have Maxwel in my team as a MERN stack developer.
+           Our company focuses on digital marketing — advertising and selling client
+           products like electricals and clothing. Previously we had serious issues
+           with our website; customers complained about poor user experience, the
+           site wasn't responsive, and clients couldn't make online payments. That's
+           where Maxwel stepped in — integrating M-Pesa and redesigning our
+           application to be fully responsive across all screens. He's the best
+           developer I've worked with, and I look forward to collaborating again.`,
+    likes: 142,
+    hearts: 89,
+  },
+];
 
 export default function Testimonials() {
+  const t = testimonials[0];
+  const initials = t.name.split(" ").map((n) => n[0]).join("");
+
   return (
-    <div className="main-container">
-      <div className="clients-testimonials">
-        <p>Testimonials</p>
+    <div className="t-page">
+      {/* ── section header ── */}
+      <div className="t-header">
+        <span className="t-eyebrow">What clients say</span>
+        <h2 className="t-title">Testimonials</h2>
+        <div className="t-title-line" />
       </div>
-      <div className="container-display">
-        <div className="testimonial-cards" style={{ display: "flex" }}>
-          <div className="contains-image">
-            <img
-              src="blackwoman.jpg"
-              className="testimonial-photos"
-              alt="first-testimonial"
-            />
-          </div>
-          <div className="text-social-media">
-            <div className="client-details">
-              <p className="name">Mercy Daniels</p>
-              <p className="relationship">Client Astradev tech</p>
-              <address>
-                <p className="email">mercydaniels2@gmail.com</p>
-              </address>
-            </div>
-            <p className="client-text">
-              Am quite greateful to have maxwel in my team as a MERN stack
-              developer Our company deals with digit marketing our focus being
-              advertising and selling clients products eg electricals, clothing
-              etc. Previous we were having issues with our website,customers
-              were complaining about poor user experience our site wasn't
-              resposive and clients couldn't make online payment that's were
-              Maxwel assisted us in integrating mpesa and design our application
-              to be responsive to all screen. He's the best developer am looking
-              forward to work with incase we bumped into a technical issue.
-            </p>
-            <div className="btn">
-              <button className="enquire">
-                <FontAwesomeIcon
-                  icon={faPhone}
-                  style={{ paddingRight: "0.8rem" }}
-                />
-                Make Enquiries
-              </button>
+
+      {/* ── card ── */}
+      <div className="t-card">
+        {/* photo */}
+        <div className="t-photo-col">
+          <img
+            src={t.photo}
+            alt={t.name}
+            className="t-photo"
+          />
+          <div className="t-photo-fade" />
+        </div>
+
+        {/* body */}
+        <div className="t-body">
+          <span className="t-quote-mark" aria-hidden="true">"</span>
+          <p className="t-text">{t.text}</p>
+
+          {/* client meta */}
+          <div className="t-meta">
+            <div className="t-avatar" aria-hidden="true">{initials}</div>
+            <div>
+              <p className="t-name">{t.name}</p>
+              <p className="t-role">{t.role}</p>
+              <p className="t-email">{t.email}</p>
             </div>
           </div>
-          <div className="testimonial-social">
-            <div className="facebook">
-              <FontAwesomeIcon icon={faFacebook} style={{ height: "1.4rem" }} />
+
+          {/* bottom row */}
+          <div className="t-actions">
+            <div className="t-socials">
+              {[
+                { icon: faFacebook,   label: "Facebook"  },
+                { icon: faLinkedinIn, label: "LinkedIn"  },
+                { icon: faTwitter,    label: "Twitter"   },
+                { icon: faWhatsapp,   label: "WhatsApp"  },
+              ].map(({ icon, label }) => (
+                <button key={label} className="t-soc" aria-label={label}>
+                  <FontAwesomeIcon icon={icon} />
+                </button>
+              ))}
             </div>
-            <div className="facebook">
-              <FontAwesomeIcon
-                icon={faLinkedinIn}
-                size="2x"
-                style={{ height: "1.4rem" }}
-              />
-            </div>
-            <div className="facebook">
-              <FontAwesomeIcon
-                icon={faTwitter}
-                size="2x"
-                style={{ height: "1.4rem" }}
-              />
-            </div>
-            <div className="facebook">
-              <FontAwesomeIcon
-                icon={faWhatsapp}
-                size="2x"
-                style={{ height: "1.4rem" }}
-              />
-            </div>
+            <button className="t-enquire">
+              <FontAwesomeIcon icon={faPhone} aria-hidden="true" />
+              Make enquiry
+            </button>
           </div>
-          <div className="clients-ratings">
-            <FontAwesomeIcon
-              icon={faThumbsUp}
-              color="black"
-              style={{ height: "1.6rem" }}
-            />
-            <FontAwesomeIcon
-              icon={faHeart}
-              color="white"
-              style={{ height: "1.6rem" }}
-            />
+        </div>
+
+        {/* ratings sidebar */}
+        <div className="t-ratings" aria-label="Ratings">
+          <div className="t-rat">
+            <FontAwesomeIcon icon={faThumbsUp} aria-hidden="true" />
+            <span>{t.likes}</span>
+          </div>
+          <div className="t-rat">
+            <FontAwesomeIcon icon={faHeart} aria-hidden="true" />
+            <span>{t.hearts}</span>
           </div>
         </div>
       </div>
-      <div className="dot-nav">
-        <FontAwesomeIcon icon={faDotCircle} color="rgb(250, 23, 61)" />
-        <FontAwesomeIcon icon={faDotCircle} color="rgb(250, 23, 61)" />
-        <FontAwesomeIcon icon={faDotCircle} color="rgb(250, 23, 61)" />
-        <FontAwesomeIcon icon={faDotCircle} color="rgb(250, 23, 120)" />
+
+      {/* ── dot nav ── */}
+      <div className="t-dots" role="tablist" aria-label="Testimonial navigation">
+        {[0, 1, 2, 3].map((i) => (
+          <button
+            key={i}
+            className={`t-dot ${i === 0 ? "active" : ""}`}
+            role="tab"
+            aria-selected={i === 0}
+            aria-label={`Testimonial ${i + 1}`}
+          />
+        ))}
       </div>
     </div>
   );

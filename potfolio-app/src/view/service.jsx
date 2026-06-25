@@ -19,22 +19,16 @@ export default function MyServices() {
 }
 
 export function Skills({ skill }) {
-  var progressBar = {
-    width: "27rem",
-    height: "0.4rem",
-    backgroundColor: "#c73030",
-    borderRadius: "0.4rem",
-  };
   return (
     <div className="display-progress">
       {skill.map((val, index) => {
-        const width = (val.level / 100) * 19;
-        progressBar = { ...progressBar, width: `${width}rem` };
         return (
           <div className="progress-div" key={index}>
             <p className="level">{val.skill}</p>
             <div className="display-level">
-              <div style={progressBar}></div>
+              <div className="progress-track">
+                <div className="progress-fill" style={{ width: `${val.level}%` }}></div>
+              </div>
               <p className="level-per">{val.level}%</p>
             </div>
           </div>
@@ -43,3 +37,4 @@ export function Skills({ skill }) {
     </div>
   );
 }
+

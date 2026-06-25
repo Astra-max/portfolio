@@ -143,3 +143,37 @@
 .cv:hover {
     filter: drop-shadow(0 0 1em rgb(73, 71, 67));
 }
+
+@media (max-width: 768px) {
+  .about-me-container {
+    height: auto;
+    padding: 4rem 1rem;
+  }
+  
+  .profile-display {
+    flex-direction: column-reverse;
+    margin: 1rem;
+    gap: 2.5rem;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .bio {
+    width: 100%;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .social-media {
+    justify-content: center;
+  }
+  
+  .documents {
+    justify-content: center;
+  }
+  
+  .profile-pic {
+    height: 18rem;
+    width: 16rem;
+  }
+}

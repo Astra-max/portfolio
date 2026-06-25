@@ -1,10 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
-import RootLayout from "../components/layout";
-import Section from "../view/section";
-import AboutMe from "../view/section2";
-import Projects from "../view/projects";
-import MyServices from "../view/service";
-import Contact from "../view/contact";
+import RootLayout, { Home } from "../components/layout";
+import Blog from "../view/blog";
 
 export default function AppRoutes() {
   return (
@@ -14,36 +10,41 @@ export default function AppRoutes() {
           path="/"
           element={
             <RootLayout>
-             <Section />
+             <Home />
             </RootLayout>
           }
         />
         <Route
-          exact path="/Home"
+          path="/Home"
           element={
             <RootLayout>
-             <Section />
+             <Home />
             </RootLayout>
           }
         />
         <Route path="/About" element={
           <RootLayout>
-             <AboutMe />
+             <Home />
           </RootLayout>
         } />
         <Route path="/Projects" element={
           <RootLayout>
-             <Projects />
+             <Home />
           </RootLayout>
         } />
         <Route path="/Services" element={
           <RootLayout>
-             <MyServices />
+             <Home />
           </RootLayout>
         } />
         <Route path="/Contact" element={
           <RootLayout>
-             <Contact />
+             <Home />
+          </RootLayout>
+        } />
+        <Route path="/Blog" element={
+          <RootLayout>
+             <Blog />
           </RootLayout>
         } />
         <Route path="*" element={<p>Page Not Found</p>} />
