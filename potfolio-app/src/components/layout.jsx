@@ -41,6 +41,9 @@ export default function RootLayout({ children }) {
   );
 }
 
+/**
+ * Handles home
+ */
 export function Home() {
   const { pathname, hash } = useLocation();
 

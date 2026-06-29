@@ -34,6 +34,9 @@ export default function Navbar() {
     );
   });
 
+  /**
+   * Handles handle click
+   */
   function HandleClick() {
     if (notice.notice > 0) return setClicked(!clicked);
   }

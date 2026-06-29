@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import "../styles/section.css"
 
+/**
+ * Handles text switcher
+ */
 function TextSwitcher() {
   const [textIndex, setTextIndex] = useState(0);
   // eslint-disable-next-line react-hooks/exhaustive-deps

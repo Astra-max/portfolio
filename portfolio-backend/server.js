@@ -9,23 +9,37 @@ console.log(mongoose.ConnectionStates)
 
 app.use(
   cors({
-    origin: "http:localhost:3000",
-    methods: ["GET", "DELETE", "OPTION", "PUT", "POST"],
-    allowedHeaders: "Content-Type: application/json",
+    origin: ["http://localhost:3000", "http://localhost:10000"],
+    methods: ["GET", "DELETE", "OPTIONS", "PUT", "POST"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
-app.use("/", router)
+app.use(express.json());
+app.use("/", router);
+
 class App {
+  /**
+   * Handles constructor
+   */
   constructor(port) {
     this.port = Number(port);
   }
+  /**
+   * Handles db connect
+   */
   dbConnect() {
     console.log("Connected to db")
   }
+  /**
+   * Handles server
+   */
   server() {
     app.listen(this.port, this.serverCallback());
   }
+  /**
+   * Handles server callback
+   */
   serverCallback() {
     console.log(`server listening on port http://localhost:${this.port}`);
   }

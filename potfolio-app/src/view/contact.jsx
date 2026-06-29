@@ -7,6 +7,9 @@ import { useContext, useState } from "react";
 import Notification from "../context/notificationContext";
 import "../styles/contact.css";
 
+/**
+ * Handles contact
+ */
 function Contact() {
   const { setNotice } = useContext(Notification);
   const [sent, setSent] = useState(false);
@@ -22,10 +25,16 @@ function Contact() {
     { id: 5, label: "Email",      info: "waoremaxwel17@gmail.com",icon: faEnvelope, href: "mailto:waoremaxwel17@gmail.com" },
   ];
 
+  /**
+   * Handles handle change
+   */
   function handleChange(e) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
+  /**
+   * Handles handle submit
+   */
   function handleSubmit(e) {
     e.preventDefault();
     if (!form.firstName || !form.email || !form.message) return;

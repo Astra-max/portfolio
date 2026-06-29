@@ -3,21 +3,6 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-/* ============================================================
-   contact.css — Contact page styles
-   Color palette:
-     page bg     #0c0b0b
-     panel bg    #111111
-     border      #222222
-     border-hover #333333
-     accent      #fc7676
-     accent-glow rgba(252, 118, 118, 0.12)
-     text-primary #e8e8e8
-     text-muted   #888888
-     text-dim     #555555
-   ============================================================ */
-
-/* ---- layout ---- */
 .contact-page {
   display: flex;
   align-items: flex-start;

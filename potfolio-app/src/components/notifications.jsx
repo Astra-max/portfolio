@@ -5,6 +5,9 @@ import useAuth from "../context/auth";
 
 export default function Notifications() {
     const { setToken } = useAuth()
+    /**
+     * Handles handle remove key
+     */
     function HandleRemoveKey() {
         localStorage.clear()
         setToken('')

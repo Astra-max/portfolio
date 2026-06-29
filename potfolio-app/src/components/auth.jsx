@@ -3,6 +3,9 @@ import { useState } from "react";
 
 export default function AccessControl({ setToken }) {
   const [passkey, setPasskey] = useState('');
+  /**
+   * Handles handle submit
+   */
   function HandleSubmit(e) {
     e.preventDefault();
     if (passkey) {

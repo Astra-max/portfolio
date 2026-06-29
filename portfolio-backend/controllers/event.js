@@ -1,5 +1,8 @@
 import Event from "../model/event.js";
 
+/**
+ * Handles get events
+ */
 export const getEvents = async (req, res) => {
   try {
     const events = await Event.find().sort({ date: -1 });
@@ -9,6 +12,9 @@ export const getEvents = async (req, res) => {
   }
 };
 
+/**
+ * Handles create event
+ */
 export const createEvent = async (req, res) => {
   try {
     const { title, category, date, location, description, imageUrl } = req.body;
@@ -35,6 +41,9 @@ export const createEvent = async (req, res) => {
   }
 };
 
+/**
+ * Handles delete event
+ */
 export const deleteEvent = async (req, res) => {
   try {
     const { id } = req.params;

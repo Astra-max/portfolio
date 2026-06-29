@@ -29,6 +29,9 @@ export default function Blog() {
     fetchEvents();
   }, []);
 
+  /**
+   * Handles fetch events
+   */
   const fetchEvents = async () => {
     try {
       const response = await fetch("http://localhost:6500/events");
@@ -92,6 +95,9 @@ export default function Blog() {
     }
   };
 
+  /**
+   * Handles handle create event
+   */
   const handleCreateEvent = async (e) => {
     e.preventDefault();
     if (!title || !date || !location || !description) {
@@ -147,6 +153,9 @@ export default function Blog() {
     setShowModal(false);
   };
 
+  /**
+   * Handles handle delete event
+   */
   const handleDeleteEvent = async (id) => {
     if (!window.confirm("Are you sure you want to delete this activity/event?")) return;
     try {

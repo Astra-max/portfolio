@@ -2,6 +2,9 @@ import AppRoutes from "../routes/app-routes";
 import useNotification from "../context/handleContext";
 import Notification from "../context/notificationContext";
 
+/**
+ * Handles app
+ */
 function App() {
   const { notice, setNotice } = useNotification();
   return (

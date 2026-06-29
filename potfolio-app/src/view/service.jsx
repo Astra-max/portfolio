@@ -18,6 +18,9 @@ export default function MyServices() {
   );
 }
 
+/**
+ * Handles skills
+ */
 export function Skills({ skill }) {
   return (
     <div className="display-progress">

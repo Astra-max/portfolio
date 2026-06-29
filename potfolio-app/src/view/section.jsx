@@ -72,7 +72,7 @@ export default function Section() {
               </div>
             </div>
             <div className="profile-photo">
-              <img src="my-photo.jpg" alt="profile" className="profile-pic" />
+              <img src="astra.jpg" alt="profile" className="profile-pic" />
             </div>
           </div>
         </div>
